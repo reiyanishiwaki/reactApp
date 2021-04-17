@@ -1,0 +1,25 @@
+02.JSXの基礎知識と文法
+・Jsxとはなんでしょうか
+JavaScript内でHTML言語を記述できるようにするための拡張言語
+ReactではJSXが業界標準
+・Jsxの基本的な記述方法
+.jsxの文頭では import React from "react"の宣言が必要
+変数やコンポーネントの記述にはキャメルケースを使用する(※Jsで禁止されているケバブケースは同様に禁止)
+.jsxないでHTMLを記述する際には、<input xxxxx  /> のように閉じタグは/>とする
+
+03.環境構築
+まず最初にnpm install でnpmを入れて、npm install nodeでnodeも入れる
+その後、npx create-react-app reactApp(ここはディレクトリ名)　の実行
+
+srcフォルダ：コンポーネントの作成を担当(CSSとか、Js系)
+publicフォルダ：htmlファイルや設定ファイル(htmlや画像系)
+buildフォルダ：本番環境のファイル(バンドルを実行している)
+　　　　　　　　npm run buildを実行すると、現在のreactディレクトリの構成から自動で作成される
+            　これをWebPackという
+コマンド
+npm run build ：バンドル実行
+npm start　：ローカルサーバを起動してReactアプリケーションを立ち上げる
+
+補足
+manifest.json：PWA(スマホでホーム画面に追加機能)に必要
+バンドル：画面ごとに存在するCSSファイルやJsファイルを1ファイルに統合すること
